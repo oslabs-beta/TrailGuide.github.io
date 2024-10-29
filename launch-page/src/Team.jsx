@@ -13,19 +13,19 @@ const Team = () => {
           <div className="teammate-box">
           <img className="Headshot" src={Aidan} alt="Aidan Pic" />
           <strong>Aidan Prior:</strong>
-           Full-stack Developer</div>
+            Developer</div>
            <div className='teammate-box'>
           <img className="Headshot" src={Sam} alt="Sam Pic" />
           <strong>Sam Lariviere:</strong>
-           Full-stack Developer</div>
+            Developer</div>
            <div className='teammate-box'>
           <img className="Headshot" src={Markus} alt="Markus Pic" />
           <strong>Markus Waung:</strong>
-           Full-stack Developer</div>
+            Developer</div>
            <div className='teammate-box'>
           <img className="Headshot" src={Nancy} alt="Nancy Pic" />
           <strong> Nanyi Deng (Nancy):</strong>
-           Full-stack Developer</div>
+           Developer</div>
         </div>
       </div>
     </section>
