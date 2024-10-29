@@ -1,0 +1,22 @@
+.how-it-works {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+  
+    ol {
+      list-style: decimal;
+      padding-left: 20px;
+      font-size: 1.5rem;
+      text-align: left;
+  
+      li {
+        margin: 20px 0;
+      }
+    }
+  }
+  
