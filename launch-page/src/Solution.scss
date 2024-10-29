@@ -1,15 +1,53 @@
+$greenbackgroundFontColor: rgb(233, 210, 137);
+$greenbackgroundColor: rgb(40, 55, 29);
+$buttonFontColor: rgb(71, 49, 12);
+$LightBackground: rgb(238, 221, 166);
+$LightestGreenBackground:  rgb(133, 138, 82);
+$LighterGreenBackground:  rgb(83, 99, 62);
+$lightGreenBackground: rgb(50, 87, 22);
+$buttonFontColor: rgb(71, 49, 12);
+
+
+
 .solution {
-    background-color: #ffffff;
-    padding: 80px 20px;
+    background: linear-gradient(to bottom, $LightestGreenBackground, $LightBackground);
+    padding: 80px;
     text-align: center;
+    align-content: center;
+    align-items: center;
+    color: $buttonFontColor;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: $greenbackgroundFontColor;
+        box-shadow: 0 0px 10px $greenbackgroundFontColor, inset 0 0px 20px rgb(177, 157, 105);
+
+    
   
     .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
+      margin-top: 10px;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: $buttonFontColor;
     }
-  
+}
     p {
       font-size: 1.2rem;
+      font-weight: bold;
       line-height: 1.6;
       margin: 20px 0;
     }

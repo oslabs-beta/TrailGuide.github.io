@@ -1,11 +1,25 @@
+$backgroundColor: rgb(238, 224, 175);
+$greenbackgroundFontColor: rgb(233, 210, 137);
+$greenbackgroundColor: rgb(40, 55, 29);
+$buttonFontColor: rgb(71, 49, 12);
+$LightBackground: rgb(238, 221, 166);
+$LightestGreenBackground:  rgb(133, 138, 82);
+$LighterGreenBackground:  rgb(83, 99, 62);
+$lightGreenBackground: rgb(50, 87, 22);
+$buttonFontColor: rgb(71, 49, 12);
+
+
+
 .screenshots {
-    background-color: #f9f9f9;
+    background: linear-gradient($LightestGreenBackground, $LighterGreenBackground);
     padding: 80px 20px;
+    color: $greenbackgroundFontColor;
     text-align: center;
   
     .section-title {
       font-size: 2.5rem;
       margin-bottom: 40px;
+      text-shadow: 0 0 40px black;
     }
   
     .screenshot-gallery {

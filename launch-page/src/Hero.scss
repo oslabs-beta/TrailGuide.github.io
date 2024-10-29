@@ -1,12 +1,26 @@
+
+$greenbackgroundFontColor: rgb(238, 210, 115);
+$greenbackgroundColor: rgb(46, 66, 31);
+$lightGreenBackground: rgb(64, 80, 48);
+$buttonFontColor: rgb(71, 49, 12);
+
 .hero {
-    background-color: #3498db;
-    color: white;
+    background: linear-gradient(to bottom, $greenbackgroundColor, $lightGreenBackground);
+    color: $greenbackgroundFontColor;
     text-align: center;
-    padding: 100px 20px;
+    margin-top: 0;
+    padding: 10px;
+    padding-bottom: 40px;
   
     .hero-title {
       font-size: 3rem;
       margin-bottom: 20px;
+      text-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    }
+
+    .hero-image {
+      max-width: 380px;
+      filter: saturate(85%) drop-shadow(0 0 15px rgba(0, 0, 0, 1));
     }
   
     .hero-subtitle {
@@ -16,10 +30,11 @@
   
     .cta-button {
       padding: 10px 20px;
-      background-color: #ffffff;
-      color: #3498db;
+      background-color: $greenbackgroundFontColor;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0px 20px rgba(0, 0, 0, .7);
+      color: $buttonFontColor;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 10px;
       text-decoration: none;
     }
   }

@@ -1,24 +1,41 @@
+$greenbackgroundFontColor2: rgb(223, 194, 99);
+$greenbackgroundColor: rgb(40, 55, 29);
+$buttonFontColor: rgb(71, 49, 12);
+$LightBackground: rgb(238, 221, 166);
+$LighterGreenBackground:  rgb(83, 99, 62);
+$lightGreenBackground: rgb(64, 80, 48);
+$buttonColor2: rgb(218, 194, 107);
+
+
 .download {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, $lightGreenBackground, $LighterGreenBackground);
     padding: 60px 20px;
     text-align: center;
+    color:$greenbackgroundFontColor2;
   
     .section-title {
       font-size: 2.5rem;
       margin-bottom: 20px;
+      color:$greenbackgroundFontColor2;
+      text-shadow: 0 0 20px rgba(0, 0, 0, .8);
     }
   
     .buttons {
+      display:flex;
+      justify-content: center;
       margin-top: 30px;
+      
   
       .cta-button {
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: white;
+        padding: .8em .9em;
+        background-color: $buttonFontColor;
+        color: $buttonColor2;
+        font-size: large;
         font-weight: bold;
-        border-radius: 5px;
+        border-radius: 13px;
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.5);
         text-decoration: none;
-        margin: 10px;
+        margin: .5em;
       }
     }
   }

@@ -1,18 +1,34 @@
+$backgroundColor: rgb(238, 224, 175);
+$greenbackgroundFontColor: rgb(233, 210, 137);
+$greenbackgroundColor: rgb(40, 55, 29);
+$buttonFontColor: rgb(71, 49, 12);
+$LightBackground: rgb(238, 221, 166);
+$LightestGreenBackground:  rgb(133, 138, 82);
+$LighterGreenBackground:  rgb(83, 99, 62);
+$lightGreenBackground: rgb(50, 87, 22);
+$buttonFontColor: rgb(71, 49, 12);
+
+
+
+
 .how-it-works {
-    background-color: #ffffff;
+    background: linear-gradient($backgroundColor, $LightestGreenBackground);
     padding: 80px 20px;
     text-align: center;
+    color:$buttonFontColor;
   
     .section-title {
       font-size: 2.5rem;
       margin-bottom: 40px;
+      text-shadow: 0 0 40px $buttonFontColor;
     }
   
     ol {
       list-style: decimal;
-      padding-left: 20px;
-      font-size: 1.5rem;
-      text-align: left;
+      font-size: 1.1rem;
+       font-weight: bold;
+       text-align: left;
+        padding-left: 15vw;
   
       li {
         margin: 20px 0;

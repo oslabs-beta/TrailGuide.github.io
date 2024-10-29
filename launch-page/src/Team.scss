@@ -1,21 +1,60 @@
+$backgroundColor: rgb(238, 224, 175);
+$greenbackgroundFontColor: rgb(233, 210, 137);
+$greenbackgroundColor: rgb(40, 55, 29);
+$buttonFontColor: rgb(71, 49, 12);
+$LightBackground: rgb(238, 221, 166);
+$LightestGreenBackground:  rgb(133, 138, 82);
+$LighterGreenBackground:  rgb(83, 99, 62);
+$lightGreenBackground: rgb(50, 87, 22);
+$buttonFontColor: rgb(71, 49, 12);
+$teamBoxColor:rgb(45, 29, 3);
+
 .team {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
+    background: linear-gradient(to bottom, $LighterGreenBackground, $greenbackgroundColor);
+    padding: 40px;
     text-align: center;
-  
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    color: rgb(220, 197, 124);
+
+
+    .team-container {
+        background-color: rgba(49, 37, 2, 0.762);;
+        border-radius: 20px;
+        box-shadow: 0 0 10px $buttonFontColor, inset 0 0 20px $teamBoxColor;
+        align-items: center;
+        margin-bottom: 30%;
+
+       .section-title {
+        padding-top: 20px;
+        border-radius: 20px;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-align: center;
+        text-shadow: 0 0 40px black;
+
+       }
+    
+       .team-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+      padding-bottom: 50px;
+
+      .teammate-box {
+        align-items: center;
+        .Headshot {
+            width: 8em;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+            margin-bottom: 20px;
+          }
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        color: $greenbackgroundFontColor
     }
-  
-    .team-list {
-      list-style: none;
-      padding: 0;
-  
-      li {
-        font-size: 1.2rem;
-        margin: 15px 0;
-      }
+}
+      
+      
     }
   }
   
