@@ -35,11 +35,16 @@ jobs:
         run: cd launch-page && ls && npm i && npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: Upload dist
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder (and assets folder)
-          path: './launch-page/dist/*'
+          # Upload dist folder 
+          path: './launch-page/dist/'
+      - name: Upload assets
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload assets folder
+          path: './launch-page/dist/assets'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
