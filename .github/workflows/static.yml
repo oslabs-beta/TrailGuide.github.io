@@ -38,8 +38,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
-          path: './launch-page/dist'
+          # Upload dist folder (and assets folder)
+          path: './launch-page/dist/*'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
