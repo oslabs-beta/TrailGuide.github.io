@@ -46,6 +46,10 @@ $teamBoxColor:rgb(45, 29, 3);
             filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
             margin-bottom: 20px;
           }
+          .LinkedIn, .GitHub {
+            text-decoration: underline;
+            color: $LightestGreenBackground;
+          }
         display:flex;
         flex-direction: column;
         text-align: center;

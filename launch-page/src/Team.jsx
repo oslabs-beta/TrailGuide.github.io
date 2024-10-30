@@ -13,19 +13,31 @@ const Team = () => {
           <div className="teammate-box">
           <img className="Headshot" src={Aidan} alt="Aidan Pic" />
           <strong>Aidan Prior:</strong>
-            Developer</div>
+          Engineering Lead, Full-Stack Engineer, Git Master
+          <a className="LinkedIn"href="http://www.linkedin.com/in/aidanprior" target="_blank">LinkedIn</a>
+          <a className='GitHub' href="https://github.com/aidanprior" target="_blank">GitHub</a>
+            </div>
            <div className='teammate-box'>
           <img className="Headshot" src={Sam} alt="Sam Pic" />
           <strong>Sam Lariviere:</strong>
-            Developer</div>
+          Full-Stack Engineer, UI/UX Designer
+          <a className="LinkedIn"href="https://www.linkedin.com/in/samuellariviere/" target="_blank">LinkedIn</a>
+          <a className='GitHub' href="https://github.com/SamLarivs" target="_blank">GitHub</a>
+            </div>
            <div className='teammate-box'>
           <img className="Headshot" src={Markus} alt="Markus Pic" />
           <strong>Markus Waung:</strong>
-            Developer</div>
+          Full-Stack Engineer, Data Scientist
+            <a className="LinkedIn"href="https://www.linkedin.com/in/markus-waung/" target="_blank">LinkedIn</a>
+            <a className='GitHub' href="https://github.com/mkw2107" target="_blank">GitHub</a>
+          </div>
            <div className='teammate-box'>
           <img className="Headshot" src={Nancy} alt="Nancy Pic" />
           <strong> Nanyi Deng (Nancy):</strong>
-           Developer</div>
+          Full-Stack Engineer, AI/ML, Data Scientist
+           <a className="LinkedIn"href="https://www.linkedin.com/in/nanyideng/" target="_blank">LinkedIn</a>
+           <a className='GitHub' href="https://github.com/homosapientdream" target="_blank">GitHub</a>
+           </div>
         </div>
       </div>
     </section>
