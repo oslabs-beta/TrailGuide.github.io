@@ -1,8 +1,8 @@
 
 import './Screenshots.scss';
-import Login from './assets/login.png';
-import Dashboard from './assets/dashboard.png';
-import Profile from './assets/profile.png';
+import Login from './assets/Login.png';
+import Dashboard from './assets/Dashboard.png';
+import Profile from './assets/Profile.png';
 import RecentEvents from './assets/RecentEvents.png';
 import EventsModal from './assets/Events-Modal.png';
 import DarkMode from './assets/DarkMode.png';
