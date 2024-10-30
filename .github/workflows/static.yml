@@ -32,7 +32,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build Latest from source
-        run: cd launch-page && ls && npm i && npm run build
+        run: |
+          cd launch-page
+          ls
+          npm ci 
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload dist
@@ -40,11 +44,6 @@ jobs:
         with:
           # Upload dist folder 
           path: './launch-page/dist/'
-      - name: Upload assets
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload assets folder
-          path: './launch-page/dist/assets'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
